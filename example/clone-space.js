@@ -68,9 +68,13 @@ var destinationClient = contentful.createClient({
 });
 
 client.getSpace(sourceSpaceId)
+       // catches errors, takes a function with an error as its argument
       .catch(reportInvalidSpace)
+      // on to the next thing
       .then(getDestinationSpace)
+      // sort of like an interceptor, returns what was passed to it
       .tap(logSummary)
+      // like then but fulfillment value must be an array
       .spread(clone)
       .done();
 
