@@ -1,6 +1,12 @@
 This folder is meant to make it easier for Zillion to manage what we store in Contentful.
 
-While files already written by Contentful in the example directory follow the convention of supplying arguments via the command line, for these utility scripts, I've found it more readable to keep values inline. To run: 
+make sure to
+
+    $ npm install
+
+in the parent directory in order to get all the relevant node dependencies.
+
+While files already written by Contentful in the example directory follow the convention of supplying arguments via the command line, for these utility scripts, I've found it more readable to keep values inline. To run:
 
     $ node entries.js
 

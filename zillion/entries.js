@@ -13,8 +13,8 @@ client.getSpace('02o36124tiz8')
   .then(getEntries)
   //.spread(logEntries)
   //.spread(countEntries)
-  //.spread(updateEntries)
-  .spread(publishEntries)
+  .spread(updateEntries)
+  //.spread(publishEntries)
   .done();
 
 function reportInvalidSpace (error) {
@@ -27,8 +27,8 @@ function getEntries (space) {
     // content type id for quizzes in the real appeal dev space
     // content_type: '44LkCwT8IM0GKgO02uc0Ow',
     // content type id for activities in the real appeal dev space
-    content_type: '6CJow7hVHqICksqcuQ42YA',
-    // limit: 10
+    content_type: '420kUUkseIYs0Wg4uCcUAC',
+    //limit: 5
   })];
 }
 
